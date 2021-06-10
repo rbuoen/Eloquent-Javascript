@@ -1,3 +1,7 @@
+// Chapter 3: Functions
+// June 8, 2021
+
+
 // Minimum
 
 // Write a function min that takes two arguments and returns their minimum
