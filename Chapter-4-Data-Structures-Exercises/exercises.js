@@ -2,19 +2,15 @@
 
 // The sum of a Range
 
-function range(start, end, step = 1) {
-    myArray = [];
-    for (let i = start; (start < end) ? i <= end : i >= end; (start < end) ? i += step : i -= step * -1) {
-        myArray.push(i);
-    }
-    return myArray;
+function range(start, end, step = start < end ? 1 : -1) {
+    array = [];
+    for (let i = start; start < end ? i <= end : i >= end; i += step) array.push(i);
+    return array;
 }
 
-function sum(range) {
+function sum(array) {
     let sum = 0;
-    for (num of range) {
-        sum += num;
-    }
+    for (num of array) sum += num;
     return sum;
 }
 
