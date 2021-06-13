@@ -2,12 +2,14 @@
 
 // The sum of a Range
 
+// returns and array containing a range of numbers
 function range(start, end, step = start < end ? 1 : -1) {
     array = [];
     for (let i = start; start < end ? i <= end : i >= end; i += step) array.push(i);
     return array;
 }
 
+// returns the sum of an array of numbers
 function sum(array) {
     let sum = 0;
     for (num of array) sum += num;
