@@ -25,18 +25,27 @@ console.log(sum(range(1, 10)));
 
 // Reversing an Array
 
+// function reverseArray(array) {
+//     let outArray = [];
+//     for (item of array) { 
+//         outArray.unshift(item) 
+//     }
+//     return outArray;
+// }
+
 function reverseArray(array) {
-    let outArray = [];
-    for (item of array) { 
-        outArray.unshift(item) 
+    const outArray = [];
+    for (let i = array.length - 1; i >= 0; i--) {
+        outArray.push(array[i]);
     }
-    return outArray;
+    return ourArray;
 }
 
 function reverseArrayInPlace(array) {
-    console.log(array.length/2);
+    for (let i = 0; i < Math.floor(array.length / 2); i++) {
+        
+    }
 }
-
 
 console.log(reverseArray(["A", "B", "C"]));
 // → ["C", "B", "A"];
